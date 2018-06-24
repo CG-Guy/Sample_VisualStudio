@@ -14,7 +14,7 @@ int main()
 	in_stream.open(" letter.txt");
 	out_stream.open("encode.txt ");
 
-	//Check t hat input file opened
+	//Check that input file opened
 	if (in_stream.fail())
 	{
 		cout << " Input file opening failed. \n";
@@ -32,7 +32,9 @@ int main()
 	char FindWord[14] = { ' t ' , ' T' , ' h' , ' H' , ' j ' , ' J' , ' d' , ' D' , ' a' , ' A' , ' p' , ' P' ,' i ' , ' I ' };
 	string ReplaceWord[14] = { " 1Y" , " 1Y" , " 1O" , " 1O" , " 1X" , " 1X" , " 1B" , " 1B" , " 1S" ," 1S" , " 1M" , " 1M" , " 1Q" , " 1Q" };
 
-	//Nested while loop to extract datafrom.dat stringline;
+	//Nested while loop to extract datafrom.dat 
+	string line;
+
 	while (getline(in_stream, line)) // Getfile
 	{
 		for (int i = 0; i <= 14; i++) // iterate
